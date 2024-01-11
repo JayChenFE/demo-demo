@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客户注册表单</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        header {
+            background-color: #48bb78;
+        }
+
+        /* 默认状态下的边框样式 */
+        input {
+            border: 1px solid #e5e7eb;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        /* 焦点状态下的边框样式 */
+        input:focus {
+            border-color: #48bb78;
+            /* 修改为焦点状态下的边框颜色 */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex justify-between items-center mb-4">
+        <img src="https://placehold.co/100x50?text=HSBC+Logo&bold&fontsize=20" alt="HSBC Logo" class="h-10">
+        <span class="text-lg font-semibold">DEMO</span>
+    </header>
+
+    <div class="container mx-auto my-5 p-5">
+        <div class="flex mb-4">
+            <div class=".w-12 bg-white p-4 mr-2">
+                <h2 class="font-bold text-xl mb-4">Main Customer</h2>
+                <div class="mb-6">
+                    <label for="customerName">Customer Name</label>
+                    <input class="w-full" type="text" id="customerName">
+                </div>
+                <div class="mb-6">
+                    <label for="registrationID">Registration ID</label>
+                    <input class="w-full" type="text" id="registrationID">
+                </div>
+                <div class="mb-6">
+                    <label for="dateOfRegistration">Date of Registration</label>
+                    <input class="w-full" type="text" id="dateOfRegistration">
+                </div>
+                <div class="mb-6">
+                    <label for="countryOfIncorporation">Country of Incorporation</label>
+                    <input class="w-full" type="text" id="countryOfIncorporation">
+                </div>
+                <div class="mb-6">
+                    <label for="registeredAddress">Registered address Country / region</label>
+                    <input class="w-full" type="text" id="registeredAddress">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine1">Address line 1</label>
+                    <input class="w-full" type="text" id="addressLine1">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine2">Address line 2</label>
+                    <input class="w-full" type="text" id="addressLine2">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine3">Address line 3</label>
+                    <input class="w-full" type="text" id="addressLine3">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine4">Address line 4</label>
+                    <input class="w-full" type="text" id="addressLine4">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine5">Address line 5</label>
+                    <input class="w-full" type="text" id="addressLine5">
+                </div>
+            </div>
+
+            <div class="w-122 bg-white p-4 ml-2">
+                <h2 class="font-bold text-xl mb-4">Connected Parties (individual)</h2>
+                <div class="mb-6">
+                    <label for="firstName">First Name</label>
+                    <input class="w-full" type="text" id="firstName">
+                </div>
+                <div class="mb-6">
+                    <label for="lastName">Last Name</label>
+                    <input class="w-full" type="text" id="lastName">
+                </div>
+                <div class="mb-6">
+                    <label for="nationality">Nationality</label>
+                    <input class="w-full" type="text" id="nationality">
+                </div>
+                <div class="mb-6">
+                    <label for="dateOfBirth">Date of birth</label>
+                    <input class="w-full" type="text" id="dateOfBirth">
+                </div>
+                <div class="mb-6">
+                    <label for="residentialAddress">Residential address Country / region</label>
+                    <input class="w-full" type="text" id="residentialAddress">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine1">Address line 1</label>
+                    <input class="w-full" type="text" id="addressLine1">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine2">Address line 2</label>
+                    <input class="w-full" type="text" id="addressLine2">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine3">Address line 3</label>
+                    <input class="w-full" type="text" id="addressLine3">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine4">Address line 4</label>
+                    <input class="w-full" type="text" id="addressLine4">
+                </div>
+                <div class="mb-6">
+                    <label for="addressLine5">Address line 5</label>
+                    <input class="w-full" type="text" id="addressLine5">
+                </div>
+                <div class="mb-6">
+                    <label for="identificationDocumentType">Identification document type</label>
+                    <input class="w-full" type="text" id="identificationDocumentType">
+                </div>
+                <div class="mb-6">
+                    <label for="identificationDocumentNumber">Identification document number</label>
+                    <input class="w-full" type="text" id="identificationDocumentNumber">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex justify-center">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Submit
+            </button>
+        </div>
+    </footer>
+</body>
+
+</html>
